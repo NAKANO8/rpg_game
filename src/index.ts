@@ -1,7 +1,11 @@
-import { Creature } from "./creture.js";
+import { Swordsman } from "./classes/jobs/Swordsman.js";
+import { Magician } from "./classes/jobs/Magician.js";
+import { Goblin } from "./classes/monsters/Goblin.js";
 
-const slime = new Creature("スライム", 100);
+const hero = new Swordsman("剣士タロウ", 30);
+const mage = new Magician("魔術師ハナコ", 25);
+const goblin = new Goblin("ゴブリンA", 20);
 
-console.log(slime.getName()); // スライム
-slime.attack();               // HPが5ポイント減少しました。
-console.log(slime.getName()); // スライム
+hero.attack(goblin);
+mage.attack(goblin);
+goblin.attack(hero);
