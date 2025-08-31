@@ -1,0 +1,1 @@
+{"version":3,"file":"creture.d.ts","sourceRoot":"","sources":["../src/creture.ts"],"names":[],"mappings":"AAAA,qBAAa,QAAQ;IACnB,OAAO,CAAC,IAAI,CAAS;IACrB,OAAO,CAAC,EAAE,CAAS;gBAEP,IAAI,EAAE,MAAM,EAAE,EAAE,EAAE,MAAM;IAK7B,OAAO,IAAI,MAAM;IAIjB,OAAO,CAAC,IAAI,EAAE,MAAM,GAAG,IAAI;IAI3B,MAAM,IAAI,IAAI;CAItB"}

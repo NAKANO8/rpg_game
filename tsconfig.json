@@ -1,0 +1,30 @@
+{
+  "compilerOptions": {
+    // 入力と出力をはっきり分ける
+    "rootDir": "./src",
+    "outDir": "./dist",
+
+    // Node ESM で行く場合（おすすめ）
+    "module": "nodenext",
+    "target": "esnext",
+    "verbatimModuleSyntax": true,
+    "isolatedModules": true,
+    "moduleDetection": "force",
+
+    // Nodeで動かすなら
+    "lib": ["esnext"],
+    "types": ["node"],
+
+    // 出力系
+    "sourceMap": true,
+    "declaration": true,
+    "declarationMap": true,
+
+    // 型チェック強め
+    "strict": true,
+    "noUncheckedIndexedAccess": true,
+    "exactOptionalPropertyTypes": true,
+    "skipLibCheck": true
+  },
+  "include": ["src"]
+}
