@@ -1,12 +1,15 @@
+import type { DecipherGCM } from "crypto";
 import type { Attackable } from "../interfaces/Attackable.js";
 
 export abstract class BaseActor implements Attackable {
   protected _name: string;
   protected _hp: number;
+  protected _dmg: number;
 
-  constructor(name: string, hp: number) {
+  constructor(name: string, hp: number, dmg: number) {
     this._name = name;
     this._hp = hp;
+    this._dmg = dmg;
   }
 
   get name(): string {

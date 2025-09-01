@@ -4,6 +4,9 @@ import { BaseActor } from "../BaseActer.js";
 
 /** 職業クラス: hp, name, sit() を持つ。Creature を実装 */
 export class Job extends BaseActor implements Creature {
+  constructor(name: string) {
+    super(name,50,5);
+  }
   // デフォルト攻撃（派生クラスでオーバーライド想定）
   attack(target: Attackable): void {
     const dmg = 5;
